@@ -101,9 +101,7 @@ ul {
 .the-good-stuff {
    max-width: 760px;
 
-   margin-left: auto;
-   margin-right: auto;
-   margin-top: 72px;
+   margin: 72px auto 48px;
 
    background: rgba($textBgColor, 0.75);
    font-family: $textFontFamily;

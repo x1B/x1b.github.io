@@ -79,9 +79,7 @@ ul {
 /* line 101, ../scss/x1b.scss */
 .the-good-stuff {
   max-width: 760px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 72px;
+  margin: 72px auto 48px;
   background: rgba(68, 68, 68, 0.75);
   font-family: "Gill Sans", "Arial", "Tahoma", sans-serif;
   color: #e0e0e0;
@@ -94,7 +92,7 @@ ul {
     border-radius: 8px;
   }
 }
-/* line 118, ../scss/x1b.scss */
+/* line 116, ../scss/x1b.scss */
 .the-good-stuff p {
   padding-right: 8px;
 }
