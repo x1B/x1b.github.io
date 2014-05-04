@@ -1,0 +1,114 @@
+// Physical colors:
+$gray0: #202020!default;
+$gray1: #333333!default;
+$gray2: #444444!default;
+$gray3: #646464!default;
+$gray4: #a0a0a0!default;
+$gray5: #c8c8c8!default;
+$gray6: #e0e0e0!default;
+$gray7: #f9f9f9!default;
+
+$paletteA: #c3669c!default;
+$paletteB: #c2e578!default;
+$paletteC: #626ca8!default;
+$paletteD: #f5c680!default;
+$paletteX1b: $paletteD!default;
+
+$canvasBgColor: #333333;
+$textBgColor: #444444;
+
+$headlineFontFamily: "Futura", "Helvetica Neue", "Verdana", sans-serif!default;
+$headlineColor: $gray7;
+$textFontFamily: "Gill Sans", "Arial", "Tahoma", sans-serif!default;
+$textFontSize: 18px!default;
+$textColor: $gray6;
+
+html * {
+   box-sizing: border-box;
+}
+
+body {
+   margin: 0;
+   color: $gray5;
+   font-size: $textFontSize;
+   font-family: $textFontFamily;
+
+   background: linear-gradient(
+                   0deg,
+                   transparent 24%, rgba(255, 255, 255, .05) 25%, rgba(255, 255, 255, .05) 26%, transparent 27%,
+                   transparent 74%, rgba(255, 255, 255, .05) 75%, rgba(255, 255, 255, .05) 76%, transparent 77%,
+                   transparent) fixed,
+               linear-gradient(
+                   90deg,
+                   transparent 24%, rgba(255, 255, 255, .05) 25%, rgba(255, 255, 255, .05) 26%, transparent 27%,
+                   transparent 74%, rgba(255, 255, 255, .05) 75%, rgba(255, 255, 255, .05) 76%, transparent 77%,
+                   transparent) 50% 0,
+               $canvasBgColor;
+   background-size: 50px 50px;
+}
+
+h1, h2, h3, h4 {
+   font-family: $headlineFontFamily;
+   font-weight: normal;
+   a, a:visited {
+      text-decoration: none;
+   }
+}
+
+h1 {
+   font-size: 72px;
+   line-height: 72px;
+   margin-bottom: -8px;
+   margin-top: 8px;
+   color: $paletteX1b;
+   a, a:visited {
+      color: inherit;
+   }
+}
+
+h2 {
+   font-size: 36px;
+   line-height: 34px;
+   margin-top: 36px;
+   background-color: $paletteA;
+   color: $textBgColor;
+   padding-left: 32px;
+   margin-left: -32px;
+   &.x1B {
+      background: $paletteX1b;
+   }
+}
+
+a {
+   color: lighten( $paletteC, 10 );
+}
+a:visited {
+   color: lighten( $paletteC, 20 );
+}
+
+ul {
+   padding-left: 24px;
+}
+
+.the-good-stuff {
+   max-width: 760px;
+
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 72px;
+
+   background: rgba($textBgColor, 0.75);
+   font-family: $textFontFamily;
+   color: $textColor;
+
+   @media ( min-width: 770px ) {
+      border-right: rgba(mix($gray1, $paletteD, 80), 0.75) solid 8px;
+      border-radius: 8px;
+   }
+   padding: 32px 8px 32px 32px;
+
+   p {
+      padding-right: 8px;
+   }
+}
+
