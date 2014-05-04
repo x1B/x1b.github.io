@@ -68,7 +68,7 @@ h1 {
 
 h2 {
    font-size: 36px;
-   line-height: 34px;
+   line-height: 36px;
    margin-top: 36px;
    background-color: $paletteA;
    color: $textBgColor;
@@ -77,6 +77,14 @@ h2 {
    &.x1B {
       background: $paletteX1b;
    }
+
+}
+
+h2.imprint {
+   background: $gray3;
+}
+p.imprint {
+   color: $gray4;
 }
 
 a {
