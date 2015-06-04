@@ -82,15 +82,24 @@ h1 {
    }
 }
 
+p.intro {
+   margin-top: 30px;
+   color: $gray4;
+}
+
 $sectionHeadHeight: 36px;
 
 h2 {
+   box-shadow: inset 0 3px white;
    background-color: $textColor;
    color: $textBgColor;
 
    font-size: $sectionHeadHeight;
    line-height: $sectionHeadHeight;
-   margin-top: $sectionHeadHeight + 12px;
+   height: $sectionHeadHeight - 2px;
+   overflow: hidden;
+   margin-top: $sectionHeadHeight - 24px;
+   margin-bottom: $sectionHeadHeight;
    padding-left: $leftGutterWidth;
    margin-left: -$leftGutterWidth;
 }
@@ -208,7 +217,7 @@ h4:after {
       float: left;
    }
    @media ( min-width: $thresholdWidth ) {
-      top: 4*48px + 24px;
+      top: 5*48px + 24px;
       left: 0;
    }
 
