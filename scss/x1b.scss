@@ -22,16 +22,19 @@ $colorLinks: $colorX1b !default;
 
 $canvasBgColor: #dedede;
 $canvasGridColor: #c0c0c0;
-$textBgColor: #fcfcfc;
+$textBgColor: #f8f8f8;
 $textBgShadowColor: rgba( #222, 0.3 );
 
-$headlineFontFamily: "Oswald", "Helvetica Neue", "Verdana", sans-serif;
+$headlineFontFamily: "Oswald", "Tahoma", "Helvetica Neue", "Verdana", sans-serif;
 $headlineColor: $gray7;
 $textFontFamily: "Helvetica Neue", "Arial", "Tahoma", sans-serif;
 $textFontSize: 18px!default;
 $textColor: $gray2;
 
+$sectionHeadHeight: 36px;
 $leftGutterWidth: 32px;
+
+$maxContentWidth: 770px;
 
 
 html * {
@@ -43,19 +46,34 @@ body {
    color: $gray5;
    font-size: $textFontSize;
    font-family: $textFontFamily;
+   background: $canvasBgColor;
+}
 
-   background: linear-gradient(
-                   0deg,
-                   transparent 24%, $canvasGridColor 25%, $canvasGridColor 26%, transparent 27%,
-                   transparent 74%, $canvasGridColor 75%, $canvasGridColor 76%, transparent 77%,
-                   transparent) fixed,
-               linear-gradient(
-                   90deg,
-                   transparent 24%, $canvasGridColor 25%, $canvasGridColor 26%, transparent 27%,
-                   transparent 74%, $canvasGridColor 75%, $canvasGridColor 76%, transparent 77%,
-                   transparent) 50% 0,
-               $canvasBgColor;
-   background-size: 48px 48px;
+
+.content {
+   max-width: $maxContentWidth;
+   margin: 0 auto 12px;
+
+   background: $textBgColor;
+   font-family: $textFontFamily;
+   color: $textColor;
+
+   @media ( min-width: 790px ) {
+      box-shadow: 0 2px 3px 1px $textBgShadowColor;
+      margin: 48px auto 12px;
+   }
+
+   padding: $leftGutterWidth 0 32px 32px;
+   p {
+      padding-right: 16px;
+   }
+}
+
+a {
+   color: $colorLinks;
+}
+a:visited {
+   color: lighten( $colorLinks, 20 );
 }
 
 h1, h2, h3, h4 {
@@ -70,7 +88,7 @@ h1 {
    margin-top: 8px;
    color: $colorX1b;
    a, a:visited {
-      color: inherit;
+      color: $colorX1b;
       text-decoration: none;
    }
 
@@ -87,21 +105,24 @@ p.intro {
    color: $gray4;
 }
 
-$sectionHeadHeight: 36px;
+
 
 h2 {
-   box-shadow: inset 0 3px white;
-   background-color: $textColor;
-   color: $textBgColor;
+   // hack to simulate "position: relative; top: -4px;" of a nested element
+   box-shadow: inset 0 4px $textBgColor;
 
    font-size: $sectionHeadHeight;
    line-height: $sectionHeadHeight;
    height: $sectionHeadHeight - 2px;
    overflow: hidden;
+
+   background-color: $textColor;
+   color: $textBgColor;
+
    margin-top: $sectionHeadHeight - 24px;
+   margin-left: -$leftGutterWidth;
    margin-bottom: $sectionHeadHeight;
    padding-left: $leftGutterWidth;
-   margin-left: -$leftGutterWidth;
 }
 
 h2#projects {
@@ -116,33 +137,6 @@ h2#x1B {
 
 p#imprint {
    color: $gray4;
-}
-
-a {
-   color: $colorLinks;
-}
-a:visited {
-   color: lighten( $colorLinks, 20 );
-}
-
-
-.the-good-stuff {
-   max-width: 770px;
-   margin: 0 auto 12px;
-
-   background: rgba( $textBgColor, 0.90 );
-   font-family: $textFontFamily;
-   color: $textColor;
-
-   @media ( min-width: 790px ) {
-      box-shadow: 0 15px 4px 8px $textBgShadowColor;
-      margin: 48px auto 12px;
-   }
-   padding: $leftGutterWidth 0 32px 32px;
-
-   p {
-      padding-right: 16px;
-   }
 }
 
 
@@ -202,59 +196,65 @@ h4:after {
 }
 
 
-.navigation {
-   $thresholdWidth: 1000px;
-   $navHeight: 30px;
-
+nav, nav ul, nav li, nav a {
    display: block;
-   position: fixed;
    padding: 0;
    margin: 0;
+}
 
+nav {
+   $navHeight: 30px;
+   $navWidth: 120px;
+   $thresholdWidth: $maxContentWidth + 2 * ( $navWidth + $leftGutterWidth );
+
+   position: fixed;
+
+   // narrow (mobile device...)
    @media ( max-width: $thresholdWidth - 1px ) {
       top: 0;
       right: 0;
-      float: left;
    }
+
+   // wide (desktop...)
    @media ( min-width: $thresholdWidth ) {
       top: 5*48px + 24px;
       left: 0;
    }
 
    li {
+      // resemble the section headings that we link to:
       list-style-type: none;
+      font-size: $sectionHeadHeight;
+      line-height: $sectionHeadHeight;
+      height: $sectionHeadHeight - 6px;
+      margin-bottom: 8px;
+      overflow: hidden;
+      font-family: $headlineFontFamily;
+
+      box-shadow: 0 1px 2px 1px $textBgShadowColor;
       @media ( max-width: $thresholdWidth - 1px ) {
          float: left;
-         padding-left: 12px;
+         margin-left: 12px;
       }
 
-      a {
-         display: inline-block;
-         box-shadow: 0 2px 2px 1px $textBgShadowColor;
-         padding: 2px;
-         height: $navHeight;
-         overflow-y: hidden;
-         overflow-x: hidden;
+      a, a:visited {
+         width: $navWidth;
+         position: relative;
+         top: -4px;
+         left: 0;
          text-decoration: none;
-         font-family: $headlineFontFamily;
-         font-size: $navHeight -1px;
-         line-height: $navHeight;
-
-         color: $textBgColor;
          background: $textColor;
+         color: $textBgColor;
 
          &[href="#projects"] { background: $colorProjects; }
          &[href="#x1B"] { background: $colorX1b; }
          &[href="#imprint"] { background: $colorImprint; }
 
          @media ( min-width: $thresholdWidth ) {
-            width: 95px;
+            width: $navWidth;
             margin: 0 0 12px;
          }
-
       }
-
    }
-
 
 }
