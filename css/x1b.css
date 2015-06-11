@@ -181,54 +181,85 @@ nav {
 @media (min-width: 1074px) {
   /* line 205, ../scss/x1b.scss */
   nav {
-    top: 264px;
     left: 0;
   }
 }
-/* line 224, ../scss/x1b.scss */
+@media (min-width: 1074px) and (min-height: 378px) {
+  /* line 205, ../scss/x1b.scss */
+  nav {
+    top: 266px;
+  }
+}
+@media (min-width: 1074px) and (max-height: 377px) {
+  /* line 205, ../scss/x1b.scss */
+  nav {
+    bottom: 0;
+  }
+}
+/* line 232, ../scss/x1b.scss */
 nav li {
   list-style-type: none;
   font-size: 36px;
   line-height: 36px;
-  height: 30px;
   margin-bottom: 8px;
   overflow: hidden;
   font-family: "Oswald", "Tahoma", "Helvetica Neue", "Verdana", sans-serif;
   box-shadow: 0 1px 2px 1px rgba(34, 34, 34, 0.3);
 }
-@media (max-width: 1073px) {
-  /* line 224, ../scss/x1b.scss */
+@media (min-width: 1074px) {
+  /* line 232, ../scss/x1b.scss */
   nav li {
-    float: left;
-    margin-left: 12px;
+    height: 30px;
   }
 }
-/* line 240, ../scss/x1b.scss */
+@media (max-width: 1073px) {
+  /* line 232, ../scss/x1b.scss */
+  nav li {
+    float: left;
+    margin-left: 4px;
+    font-size: 32px;
+  }
+}
+@media (max-width: 1073px) {
+  /* line 252, ../scss/x1b.scss */
+  nav li:first-child {
+    margin: 0;
+  }
+}
+/* line 258, ../scss/x1b.scss */
 nav li a, nav li a:visited {
-  width: 120px;
   position: relative;
-  top: -4px;
   left: 0;
   text-decoration: none;
   background: #444444;
   color: #f8f8f8;
 }
-/* line 249, ../scss/x1b.scss */
+/* line 265, ../scss/x1b.scss */
 nav li a[href="#projects"], nav li a:visited[href="#projects"] {
   background: #e53935;
 }
-/* line 250, ../scss/x1b.scss */
+/* line 266, ../scss/x1b.scss */
 nav li a[href="#x1B"], nav li a:visited[href="#x1B"] {
   background: #f57f17;
 }
-/* line 251, ../scss/x1b.scss */
+/* line 267, ../scss/x1b.scss */
 nav li a[href="#imprint"], nav li a:visited[href="#imprint"] {
   background: #646464;
 }
 @media (min-width: 1074px) {
-  /* line 240, ../scss/x1b.scss */
+  /* line 258, ../scss/x1b.scss */
   nav li a, nav li a:visited {
     width: 120px;
+    top: -4px;
+    height: 36px;
     margin: 0 0 12px;
+  }
+}
+@media (max-width: 1073px) {
+  /* line 258, ../scss/x1b.scss */
+  nav li a, nav li a:visited {
+    height: 42px;
+    line-height: 55px;
+    width: 100px;
   }
 }

@@ -203,6 +203,7 @@ nav, nav ul, nav li, nav a {
 }
 
 nav {
+   $navTopFull: 5*48px + 26px;
    $navHeight: 30px;
    $navWidth: 120px;
    $thresholdWidth: $maxContentWidth + 2 * ( $navWidth + $leftGutterWidth );
@@ -217,8 +218,15 @@ nav {
 
    // wide (desktop...)
    @media ( min-width: $thresholdWidth ) {
-      top: 5*48px + 24px;
       left: 0;
+
+      @media ( min-height: $navTopFull + 112 ) {
+         top: $navTopFull;
+      }
+      @media ( max-height: $navTopFull + 111 ) {
+         bottom: 0;
+      }
+
    }
 
    li {
@@ -226,21 +234,29 @@ nav {
       list-style-type: none;
       font-size: $sectionHeadHeight;
       line-height: $sectionHeadHeight;
-      height: $sectionHeadHeight - 6px;
       margin-bottom: 8px;
       overflow: hidden;
       font-family: $headlineFontFamily;
-
       box-shadow: 0 1px 2px 1px $textBgShadowColor;
+
+      @media ( min-width: $thresholdWidth ) {
+         height: $sectionHeadHeight - 6px;
+      }
+
       @media ( max-width: $thresholdWidth - 1px ) {
          float: left;
-         margin-left: 12px;
+         margin-left: 4px;
+         font-size: $sectionHeadHeight - 4px;
+      }
+
+      &:first-child {
+         @media ( max-width: $thresholdWidth - 1px ) {
+            margin: 0;
+         }
       }
 
       a, a:visited {
-         width: $navWidth;
          position: relative;
-         top: -4px;
          left: 0;
          text-decoration: none;
          background: $textColor;
@@ -252,7 +268,15 @@ nav {
 
          @media ( min-width: $thresholdWidth ) {
             width: $navWidth;
+            top: -4px;
+            height: $sectionHeadHeight;
             margin: 0 0 12px;
+         }
+
+         @media ( max-width: $thresholdWidth - 1px ) {
+            height: $navHeight + 12px;
+            line-height: $navHeight + 25px;
+            width: $navWidth - 20px;
          }
       }
    }
