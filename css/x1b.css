@@ -127,7 +127,7 @@ h4 {
   font-size: 24px;
   background: #e57373;
   height: 68px;
-  width: 240px;
+  width: 320px;
 }
 /* line 168, ../scss/x1b.scss */
 h4 a, h4 a:visited {
@@ -155,7 +155,7 @@ h4:after {
   border-right-color: transparent;
   background-clip: border-box;
   position: relative;
-  left: 240px;
+  left: 320px;
   top: -64px;
   content: '';
 }
