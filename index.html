@@ -165,19 +165,19 @@
             <h4>
                <a href="https://github.com/x1B/paperdart">Paperdart</a>
                <p class="sub-head">
-                  a pastebin that can be hosted from Elasticsearch (beta quality)
+                  pastebin to be hosted from Elasticsearch (2015)
                </p>
             </h4>
             <p>
-               Pastebin sites are quite useful, especially in conjunction with IRC.
+               Pastebin sites are quite useful, especially in conjunction with a messaging app.
                However I found that the information I need to share is often not something to put out on the internet.
-               If you have an Elasticsearch instance running on your intranet, you can simply put paperdart into your plugins folder, and there is your pastebin.
+               If you have an <a href="https://www.elastic.co/elasticsearch/">Elasticsearch</a> instance running on your intranet, you can simply put paperdart into your plugins folder, and there is your pastebin.
                Paperdart also offers preview for markdown and HTML, so I use it to compose any substantial amount of markdown.
             </p>
             <p>
                I created the application using <a href="http://laxarjs.org">LaxarJS</a> and <a href="http://codemirror.net">Codemirror</a>.
                From time to time I use it to try out new web technologies.
-               For instance, Paperdart uses <a href="http://jakearchibald.com/2015/thats-so-fetch/" title="That's so fetch!">ES6-fetch</a>.
+               For instance, Paperdart uses <a href="http://jakearchibald.com/2015/thats-so-fetch/" title="That's so fetch!">ES6-fetch</a> polyfill.
                It does not use any of the more powerful Elasticsearch capabilities (like, say, <em>search</em>), merely treating it as a glorified key/value-store.
                It should be fairly easy to port paperdart to something else.
             </p>
@@ -190,7 +190,7 @@
                <a href="https://github.com/x1B/nbe">NBE</a>
                <p class="sub-head">
                   node-based editing library<br>
-                  based on web technologies (alpha)
+                  based on web technologies, 2016-2017
                </p>
             </h4>
             <p>
@@ -206,6 +206,13 @@
                Automatic graph layout calculation is provided through the <a href="https://github.com/cpettitt/dagre">dagre</a> library.
             </p>
             <p>
+               Later, I <a href="https://github.com/x1B/wireflow">recreated</a> 
+               the UI in <a href="https://reactjs.org/">React</a>.
+               This version was used to implement the
+               <a href="https://chrome.google.com/webstore/detail/laxarjs-developer-tools/leidhppnemgdhcjfagmjdkfjpejibinp">
+               LaxarJS Developer Tools</a> for Chrome.
+            </p>
+            <p>
                <a href="https://github.com/x1B/nbe">more</a>
             </p>
          </li>
@@ -214,12 +221,43 @@
                <a href="#top" title="The Escape Sequence">This Site</a>
                <p class="sub-head">
                   <em>the escape sequence,</em><br />
-                  personal site
+                  personal site, 2017-2020
                </p>
             </h4>
             <p>
                Playing around with all the great libraries, frameworks and other tools out there, it becomes easy to get carried away and forget about the capabilities of the underlying web platform that powers it all.
                While I love to learn new things, I take a certain joy out of writing the JavaScript, (S)CSS and HTML on this site by hand.
+            </p>
+         </li>
+
+         <li>
+            <h4>
+               <a href="#top" title="Mozilla Input">
+                 Firefox Input
+               </a>
+               <p class="sub-head">
+                  Sentiment analysis<br>
+                  Internship 2010/2011
+               </p>
+            </h4>
+            <p>
+               While interning with the <a href="https://blog.mozilla.org/data/">mozilla date team</a> (then "Mozilla Metrics") in 2010,
+               I built a <a href="https://en.wikipedia.org/wiki/Sentiment_analysis">sentiment analysis</a> tool for the original version of the <a 
+               href="http://input.mozilla.org">Firefox Input</a> site.
+            </p>
+            <p>
+               Sadly, the Python/Django-solution of that time is no longer with
+               us (<a 
+               href="https://github.com/mozilla/input.mozilla.org/commit/2864110dd2b1375924021e75fe1f7e62050a491a">
+               the code</a> is, though). My Contribution was used to identify website breakage 
+               in advance of the <em>Firefox 4</em> release (the first 
+               "evergreen" version of Firefox).
+            </p>
+            <p>
+               Together with a good deal of <a href="https://en.wikipedia.org/wiki/Extract,_transform,_load">ETL work</a>,
+               this actually got <a href="https://kyoshino.github.io/mozument-finder/#Michael%20Kurze">my name</a> on 
+               <a href="https://wiki.mozilla.org/Monument">the Monument</a>,
+               so it's basically all downhill from here ;)
             </p>
          </li>
       </ul>
