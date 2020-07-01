@@ -1,2 +1,6 @@
-x1b.github.io
-=============
+x1b.org
+=======
+
+> personal website of Michael Kurze
+
+Now built in vitepress

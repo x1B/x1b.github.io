@@ -1,0 +1,32 @@
+{
+  "name": "x1b.github.io",
+  "version": "1.0.0",
+  "description": "personal website of Michael Kurze",
+  "main": "index.html",
+  "dependencies": {},
+  "devDependencies": {
+    "eslint-plugin-vue": "^6.2.2",
+    "standard": "^14.3.4",
+    "vitepress": "^0.5.0"
+  },
+  "scripts": {
+    "start": "vitepress",
+    "prepare": "rm -rf docs && vitepress build && mv .vitepress/dist docs",
+    "test": "standard"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/x1B/x1b.github.io.git"
+  },
+  "author": "Michael Kurze",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/x1B/x1b.github.io/issues"
+  },
+  "homepage": "https://github.com/x1B/x1b.github.io#readme",
+  "standard": {
+    "ignore": [
+      "projects/nbe"
+    ]
+  }
+}
