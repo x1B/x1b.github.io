@@ -17,7 +17,7 @@ nav, nav ul, nav li, nav a {
 }
 
 nav {
-  --navTopFull: 5*48px + 26px;
+  --navTopFull: calc(5*48px + 26px);
   --navHeight: 30px;
   --navWidth: 120px;
   --thresholdWidth: calc(
@@ -110,7 +110,7 @@ nav a:visited[href="#imprint"] {
     top: -5px;
     width: var(--navWidth);
     height: calc(var(--sectionHeadHeight) - 4px);
-    /* margin: 0 0 12px; */
+    margin: 0 0 12px;
   }
 }
 
