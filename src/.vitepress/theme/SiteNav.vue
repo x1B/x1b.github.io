@@ -89,18 +89,18 @@ nav a:visited {
   color: var(--textBgColor);
 }
 
-nav a[href="#projects"],
-nav a:visited[href="#projects"] {
+nav a[href="/#projects"],
+nav a:visited[href="/#projects"] {
   background: var(--colorProjects);
 }
 
-nav a[href="#x1B"],
-nav a:visited[href="#x1B"] {
+nav a[href="/#x1B"],
+nav a:visited[href="/#x1B"] {
   background: var(--colorX1b);
 }
 
-nav a[href="#imprint"],
-nav a:visited[href="#imprint"] {
+nav a[href="/#imprint"],
+nav a:visited[href="/#imprint"] {
   background: var(--colorImprint);
 }
 
