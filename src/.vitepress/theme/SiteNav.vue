@@ -1,10 +1,10 @@
 
 <template>
-  <nav>
+  <nav class="nav-bar">
     <ul>
-      <li class="projects"><a href="#projects">Projects</a></li>
-      <li class="x1B"><a href="#x1B">About</a></li>
-      <li class="imprint"><a href="#imprint">Imprint</a></li>
+      <li class="projects"><a href="/#projects">Projects</a></li>
+      <li class="x1B"><a href="/#x1B">About</a></li>
+      <li class="imprint"><a href="/#imprint">Imprint</a></li>
    </ul>
   </nav>
 </template>
