@@ -5,13 +5,13 @@
   "main": "index.html",
   "dependencies": {},
   "devDependencies": {
-    "eslint-plugin-vue": "^6.2.2",
-    "standard": "^14.3.4",
-    "vitepress": "^0.5.0"
+    "eslint-plugin-vue": "~7.5.0",
+    "standard": "~16.0.3",
+    "vitepress": "~0.11.5"
   },
   "scripts": {
-    "start": "vitepress",
-    "prepare": "rm -rf docs && vitepress build && mv .vitepress/dist docs",
+    "start": "vitepress dev src",
+    "prepare": "rm -rf docs && vitepress build src && mv src/.vitepress/dist docs",
     "test": "standard"
   },
   "repository": {
