@@ -45,25 +45,7 @@
   [more](https://www.meetup.com/aachen-vue-js-meetup/)
 
 
-* ### [LaxarJS](http://laxarjs.org) <p class="sub-head">middleware for the web client (stable)<br> contributor/maintainer, since 2013</p>
-
-  It is a privilege to be [employed](http://www.aixigo.de) as participant in an open source effort.
-  LaxarJS can be considered a _middleware_ that helps to decouple and structure your application components
-  through a publish/subscribe-system.
-
-  Initially, LaxarJS was mainly geared towards AngularJS developers,
-  but can now be used as a bridging technology in a
-  [micro-frontend](https://martinfowler.com/articles/micro-frontends.html) architecture.
-  I favor using it in combination with [Vue.js](https://vuejs.org).
-  For the LaxarJS team, [Alex](https://twitter.com/alex3683) and I presented the project at
-  [enterJS 2015](http://www.enterjs.de/abstracts/#laxarjs),
-  [goto;amsterdam](http://gotocon.com/amsterdam-2016/presentations/show_presentation.jsp?oid=7800)
-  [(W-)JAX Munich](https://jaxenter.de/ein-wenig-streiterei-auf-kindergartenniveau-wird-es-zwischen-java-und-javascript-verfechtern-wohl-immer-geben-34846).
-
-  [more](http://laxarjs.org)
-
-
-* ### [This Site](#top) <p class="sub-head">_the escape sequence,_<br /> personal site, 2017-2020</p>
+* ### [This Site](#top) <p class="sub-head">_the escape sequence,_<br /> personal site, 2017-2021</p>
 
   Playing around with all the great libraries, frameworks and other tools out there, it becomes easy to get carried away and forget about the capabilities of the underlying web platform that powers it all.
   So for quite some time I took a certain joy in writing the JavaScript, (S)CSS and HTML on this site by hand.
@@ -79,6 +61,25 @@
 
 
 ## Previous Projects
+
+
+* ### [LaxarJS](http://laxarjs.org) <p class="sub-head">middleware for the web client (stable)<br> contributor/maintainer, since 2013</p>
+
+  It is a privilege to have been [employed](http://www.aixigo.de) as participant in an open source effort.
+  LaxarJS can be considered a _middleware_ that helps to decouple and structure your application components
+  through a publish/subscribe-system.
+
+  Initially, LaxarJS was mainly geared towards AngularJS developers,
+  but can now be used as a bridging technology in a
+  [micro-frontend](https://martinfowler.com/articles/micro-frontends.html) architecture.
+  I favor using it in combination with [Vue.js](https://vuejs.org).
+  For the LaxarJS team, [Alex](https://twitter.com/alex3683) and I presented the project at
+  [enterJS 2015](http://www.enterjs.de/abstracts/#laxarjs),
+  [goto;amsterdam](http://gotocon.com/amsterdam-2016/presentations/show_presentation.jsp?oid=7800)
+  [(W-)JAX Munich](https://jaxenter.de/ein-wenig-streiterei-auf-kindergartenniveau-wird-es-zwischen-java-und-javascript-verfechtern-wohl-immer-geben-34846).
+
+  [more](http://laxarjs.org)
+
 
 * ### [NBE](https://github.com/x1B/nbe) and [Wireflow](https://github.com/x1B/wireflow) <p class="sub-head">node-based editing library<br> various web technologies, 2016-2017</p>
 
@@ -140,8 +141,7 @@
 
 This x1B is me, _Michael Kurze_, 2013 CS grad from RWTH Aachen,
 and this is my _personal_ website.
-I am a software developer and product architect with [aixigo AG](http://www.aixigo.de/) in Aachen (Germany).
-Among other things, I take a part in the development of [LaxarJS](http://www.laxarjs.org) a runtime for the construction of large web-apps from small, manageable parts.
+I am a software developer and product architect, based in Cologne, Germany.
 
 Professionally, my focus is and always has been on web technologies,
 a field that will probably never get boring.

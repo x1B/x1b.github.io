@@ -7,7 +7,7 @@
       <p class="imprint">
          Verantwortlich für den Inhalt dieser Webseite ist
          <em>Michael Kurze</em>.<br>
-         <em>Horngasse 15, 52064 Aachen, Germany</em><br>
+         <em>Melatengürtel 22, 50933 Köln, Germany</em><br>
          E-Mail: <code>michael.codes__pm.me</code> (insert @ instead of __)
 	  </p>
 	  <h4>Privacy Statement</h4>
