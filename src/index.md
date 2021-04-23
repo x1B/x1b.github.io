@@ -3,9 +3,16 @@
 
 ## Current Projects
 
+* ### [nextAudit AuditCloud](https://www.next-audit.de) <p class="sub-head">SaaS Product<br>Software Architect, since 2021 </p>
+
+  I recently joined the team of nextAudit in Aachen, where we are turning chores into a pleasant experience.
+
+  [more](https://next-audit.de/)
+
+
 * ### [How to Sell Drugs Online (Fast)](https://www.netflix.com/de/title/80218448) <p class="sub-head">Netflix Series <br> Technical Consultant, since 2018 </p>
 
-  I am consulting [Bildundtonfabrik](https://btf.de) on technical questions concerning information security, software development, and nerd culture.
+  I am consulting [Bildundtonfabrik](https://btf.de) in Cologne on technical questions concerning information security, software development, and nerd culture.
 
   If you see any code or a terminal on screen, chances are that I
   was involved.
@@ -26,9 +33,11 @@
   Players find clues, solve riddles, and generally have a good time.
 
   Throughout the last couple of years,
-  I have been supporting our tour authors in creating great experiences,
-  while taking part in evolving our a [Django](https://docs.djangoproject.com) based game platform,
-  and in occasionally checking the [Ansible](https://docs.ansible.com/) based [AWS](https://aws.amazon.com/) ops.
+  I have been supporting our tour authors in creating great experiences by evolving our a
+  [Django](https://docs.djangoproject.com)/[React](https://reactjs.org/)
+  based game platform (as well as contributing some of the riddles),
+  and in occasionally checking the [Ansible](https://docs.ansible.com/)/[AWS](https://aws.amazon.com/)
+  operations.
 
   [more](https://www.planlos.in)
 
@@ -47,12 +56,9 @@
 
 * ### [This Site](#top) <p class="sub-head">_the escape sequence,_<br /> personal site, 2017-2021</p>
 
-  Playing around with all the great libraries, frameworks and other tools out there, it becomes easy to get carried away and forget about the capabilities of the underlying web platform that powers it all.
-  So for quite some time I took a certain joy in writing the JavaScript, (S)CSS and HTML on this site by hand.
-
-  However, _static site generators_ are just too compelling,
-  so recently I took the opportunity to recreate the site using [vitepress](https://github.com/vuejs/vitepress),
-  a bleeding edge generator based on the upcoming [Vue 3](https://v3.vuejs.org/) and [vite](https://github.com/vitejs/vite).
+  My portfolio site, used to try out things from time to time.
+  In 2020 I rebuilt the site using [vitepress](https://github.com/vuejs/vitepress),
+  a bleeding edge generator based on the [Vue 3](https://v3.vuejs.org/) and [vite](https://github.com/vitejs/vite).
   In that process I picked up custom properties and dropped the SCSS in favor of plain standard CSS.
   This combination makes for a lightning fast editing experience, where Vite hot-reloads my content much faster than I
   can even start telling my browser to refresh.
@@ -62,30 +68,29 @@
 
 ## Previous Projects
 
+* ### [LaxarJS](http://laxarjs.org) <p class="sub-head">middleware for the web client (stable)<br> contributor/maintainer, 2013 – 2020</p>
 
-* ### [LaxarJS](http://laxarjs.org) <p class="sub-head">middleware for the web client (stable)<br> contributor/maintainer, since 2013</p>
-
-  It is a privilege to have been [employed](http://www.aixigo.de) as participant in an open source effort.
+  It was a privilege to have been [employed](http://www.aixigo.de) as participant in an open source effort.
   LaxarJS can be considered a _middleware_ that helps to decouple and structure your application components
   through a publish/subscribe-system.
 
   Initially, LaxarJS was mainly geared towards AngularJS developers,
-  but can now be used as a bridging technology in a
-  [micro-frontend](https://martinfowler.com/articles/micro-frontends.html) architecture.
+  then turned into a bridging technology suitable for
+  [micro-frontend](https://martinfowler.com/articles/micro-frontends.html) architectures.
   I favor using it in combination with [Vue.js](https://vuejs.org).
   For the LaxarJS team, [Alex](https://twitter.com/alex3683) and I presented the project at
   [enterJS 2015](http://www.enterjs.de/abstracts/#laxarjs),
-  [goto;amsterdam](http://gotocon.com/amsterdam-2016/presentations/show_presentation.jsp?oid=7800)
+  [goto;amsterdam](http://gotocon.com/amsterdam-2016/presentations/show_presentation.jsp?oid=7800) and
   [(W-)JAX Munich](https://jaxenter.de/ein-wenig-streiterei-auf-kindergartenniveau-wird-es-zwischen-java-und-javascript-verfechtern-wohl-immer-geben-34846).
 
   [more](http://laxarjs.org)
 
 
-* ### [NBE](https://github.com/x1B/nbe) and [Wireflow](https://github.com/x1B/wireflow) <p class="sub-head">node-based editing library<br> various web technologies, 2016-2017</p>
+* ### [NBE](https://github.com/x1B/nbe) and [Wireflow](https://github.com/x1B/wireflow) <p class="sub-head">node-based editing library<br> various web technologies, 2014-2016</p>
 
-  A personal project of mine, [NBE](https://github.com/x1B/nbe) is a user interface to display and manipulate directed hypergraphs.
+  A toy project of mine, [NBE](https://github.com/x1B/nbe) is a user interface to display and manipulate directed hypergraphs.
   In such graphs, each edge may connect _from_ any number of nodes _to_ any number of nodes.
-  Check out a [toy example](/projects/nbe/examples/logic/) where NBE is used to implement a simple circuit simulator.
+  Check out a [demo example](/projects/nbe/examples/logic/) where NBE is used to implement a simple circuit simulator.
 
   The AngularJS (later: React) module is aimed specifically at node-based editing applications such as
   _digital compositing, visual programming, data integration/mining_ and _project planning_.
@@ -97,22 +102,6 @@
   This version was used to implement the [LaxarJS Developer Tools](https://chrome.google.com/webstore/detail/laxarjs-developer-tools/leidhppnemgdhcjfagmjdkfjpejibinp) for Google Chrome.
 
   [more](https://github.com/x1B/nbe)
-
-
-* ### [Paperdart](https://github.com/x1B/paperdart) <p class="sub-head">simple pastebin<br> for hosting from Elasticsearch (2015)</p>
-
-  Pastebin sites are quite useful, especially in conjunction with a messaging app.
-  However I found that the information I need to share is often not something to put out on the internet.
-  If you have an [Elasticsearch](https://www.elastic.co/elasticsearch/) instance running on your intranet,
-  you can simply put _paperdart_ into your plugins folder, and there is your pastebin.
-  Paperdart also offers preview for markdown and HTML,
-  so for a time I used it to compose any substantial amount of markdown.
-
-  I created the application using [LaxarJS](http://laxarjs.org) and [Codemirror](http://codemirror.net).
-  It however does not use any of the more powerful Elasticsearch capabilities (like, say, _search_),
-  merely treating it as a glorified key/value-store.
-
-  [more](https://github.com/x1B/paperdart)
 
 
 * ### [Firefox Input](https://input.mozilla.org) <p class="sub-head">Sentiment analysis<br> internships 2010/2011</p>
@@ -147,6 +136,7 @@ Professionally, my focus is and always has been on web technologies,
 a field that will probably never get boring.
 I am also interested in software and service architecture,
 machine learning and data mining topics ([my master's thesis](https://www.researchgate.net/publication/271436091_Adaptive_Model_Tree_for_Streaming_Data)).
+
 
 #### Contact
 
