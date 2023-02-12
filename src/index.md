@@ -3,13 +3,6 @@
 
 ## Current Projects
 
-* ### [nextAudit AuditCloud](https://www.next-audit.de) <p class="sub-head">SaaS Product<br>Software Architect, since 2021 </p>
-
-  I recently joined the team of nextAudit in Aachen, where we are turning chores into a pleasant experience.
-
-  [more](https://next-audit.de/)
-
-
 * ### [How to Sell Drugs Online (Fast)](https://www.netflix.com/de/title/80218448) <p class="sub-head">Netflix Series <br> Technical Consultant, since 2018 </p>
 
   I am consulting [Bildundtonfabrik](https://btf.de) in Cologne on technical questions concerning information security, software development, and nerd culture.
@@ -67,6 +60,7 @@
 
 
 ## Previous Projects
+
 
 * ### [LaxarJS](http://laxarjs.org) <p class="sub-head">middleware for the web client (stable)<br> contributor/maintainer, 2013 – 2020</p>
 
@@ -136,6 +130,8 @@ Professionally, my focus is and always has been on web technologies,
 a field that will probably never get boring.
 I am also interested in software and service architecture,
 machine learning and data mining topics ([my master's thesis](https://www.researchgate.net/publication/271436091_Adaptive_Model_Tree_for_Streaming_Data)).
+
+Currently, I work in the field of electrical energy transformation at [envelio](https://envelio.com/) in Cologne.
 
 
 #### Contact
