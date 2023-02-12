@@ -1,11 +1,11 @@
 
 <section class="projects" id="projects">
 
-## Current Projects
+## Current/Recent Projects
 
-* ### [How to Sell Drugs Online (Fast)](https://www.netflix.com/de/title/80218448) <p class="sub-head">Netflix Series <br> Technical Consultant, since 2018 </p>
+* ### [How to Sell Drugs Online (Fast)](https://www.netflix.com/de/title/80218448) <p class="sub-head">Netflix Series <br> Technical Consultant, 2018-2022 </p>
 
-  I am consulting [Bildundtonfabrik](https://btf.de) in Cologne on technical questions concerning information security, software development, and nerd culture.
+  I consulted [Bildundtonfabrik](https://btf.de) in Cologne on technical questions concerning information security, software development, and nerd culture.
 
   If you see any code or a terminal on screen, chances are that I
   was involved.
@@ -35,18 +35,6 @@
   [more](https://www.planlos.in)
 
 
-* ### [Aachen Vue.js Meetup](https://www.meetup.com/aachen-vue-js-meetup/) <p class="sub-head">co-organizer<br>since 2018</p>
-
-  Recently on the backburner (thanks to COVID-19),
-  [Alexander Stoffers](https://next-audit.de/) and I managed to gather the [Vue.js](https://vuejs.org/)
-  Community in [Aachen](https://en.wikipedia.org/wiki/Aachen) for seven meetups so far
-  enjoying great talks as well as sponsored Pizza.
-
-  Sign Up and join us for our next event!
-
-  [more](https://www.meetup.com/aachen-vue-js-meetup/)
-
-
 * ### [This Site](#top) <p class="sub-head">_the escape sequence,_<br /> personal site, 2017-2021</p>
 
   My portfolio site, used to try out things from time to time.
@@ -60,6 +48,18 @@
 
 
 ## Previous Projects
+
+
+* ### [Aachen Vue.js Meetup](https://www.meetup.com/aachen-vue-js-meetup/) <p class="sub-head">co-organizer,<br> 2017-2020</p>
+
+  Recently on the backburner (thanks to COVID-19),
+  [Alexander Stoffers](https://next-audit.de/) and I managed to gather the [Vue.js](https://vuejs.org/)
+  Community in [Aachen](https://en.wikipedia.org/wiki/Aachen) for seven meetups so far
+  enjoying great talks as well as sponsored Pizza.
+
+  Sign Up and join us for our next event!
+
+  [more](https://www.meetup.com/aachen-vue-js-meetup/)
 
 
 * ### [LaxarJS](http://laxarjs.org) <p class="sub-head">middleware for the web client (stable)<br> contributor/maintainer, 2013 – 2020</p>

@@ -5,9 +5,9 @@
   "main": "index.html",
   "dependencies": {},
   "devDependencies": {
-    "eslint-plugin-vue": "~7.5.0",
-    "standard": "~16.0.3",
-    "vitepress": "~0.15.0"
+    "eslint-plugin-vue": "~9.9.0",
+    "standard": "~17.0.0",
+    "vitepress": "~1.0.0-alpha.45"
   },
   "scripts": {
     "start": "vitepress dev src",
